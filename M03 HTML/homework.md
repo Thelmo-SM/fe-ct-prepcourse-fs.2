@@ -42,6 +42,7 @@ Una vez tengas creado tu archivo, sea manualmente o utilizando atajos, escribe l
 </head>
 <body>
   <!-- Contenido de la página va aquí-->
+  
 </body>
 </html>
 
