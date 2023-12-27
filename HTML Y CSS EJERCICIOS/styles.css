@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #322f2c;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background: linear-gradient(180deg, rgba(59, 47, 42, 0.5)0%, rgb(50, 47, 44)100%),
+    url(wood-591631_1280.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 800;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 20px;
+    padding: 25px;
+    color: aliceblue;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover {
+    color: #e67300;
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-txt {
+    width: 50%;
+}
+.header-txt h1 {
+    font-size: 110px;
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.header-txt p {
+    font-size: 17px;
+    color: aliceblue;
+}
+.btn-1 {
+    display: inline-block;
+    padding: 10px 39px;
+    background-color: #e67300;
+    color: aliceblue;
+    font-size: 15px;
+    margin-top: 35px;
+    border: 0;
+    cursor: pointer;
+}
+.btn-1:hover {
+    color: #322f2c;
+    background-color: rgb(255, 161, 39);
+}
+.about {
+    padding: 100px;
+}
+.about-content {
+    display: flex;
+}
+.about-1 {
+    width: 50%;
+}
+h3 {
+    font-size: 30px;
+    color: rgb(226, 200, 169);
+    margin-bottom: 30px;
+}
+p {
+    color: rgb(255, 243, 228);
+    font-size: 15px;
+}
+.about-2 {
+    width: 50%;
+    padding-left: 150px;
+}
+.about-img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+
+}
+.about-img img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+.about-txt {
+    padding-left: 20px;
+}
+.about-txt h4 {
+    font-size: 15px;
+    color: rgb(226, 200, 169);
+}
+.servicios {
+    padding: 100px;
+    background: linear-gradient(180deg, rgba(255, 191, 163, 0.226)0%, rgb(53, 49, 46)100%)
+}
+.servicios-txt {
+    text-align: center;
+}
+h2 {
+    font-size: 50px;
+    line-height: 50px;
+    color: rgb(226, 200, 169);
+    margin-bottom: 50px;
+}
+.servicios-txt p {
+    color: rgb(0, 0, 0);
+    margin-bottom: 50px
+}
+.servicios-content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.servicios-content img {
+    width: 100%;
+    height: 350px;
+}
+.footer {
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer h2 {
+    color: rgb(226, 200, 169)
+}
+.form-group {
+    display: flex;
+}
+.campo {
+    padding: 13px 10px;
+    background-color: rgb(255, 243, 228);
+    color: #ac5703;
+    outline: none;
+    font-size: 15px;
+    margin: o 5px 5px 0;
+}
+.campo::placeholder {
+    color: #ff8000;
+    text-transform: capitalize;
+}
+@media(max-width:991px) {
+    .menu{
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #322f2c;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .header-content {
+        padding: 100px 30px 30px 30px;
+    }
+    .header-txt {
+        width: 100%;
+        text-align: center;
+    }
+    .header-txt h1 {
+        font-size: 90px;
+        line-height: 100px;
+    }
+    .btn-1 {
+        margin-top: 25px;
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-2 {
+        width: 100%;
+        padding-left: 0;
+    }
+    .about-img {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .about-txt {
+        padding-left: 0;
+    }
+    .servicios {
+        padding: 30px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .servicios-content {
+        grid-template-columns: repeat(1,1fr); 
+    }
+    .footer {
+        padding: 30px;
+    }
+    .form-group {
+        flex-direction: column;
+    }
+    .campo {
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
+}
